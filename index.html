@@ -14,7 +14,7 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" id = "myNavbar">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -29,6 +29,7 @@
         <li><a href="#">&lt;div&gt;</a></li>
         <li><a href="#">&lt;span&gt;</a></li>
         <li><a href="#">&lt;p&gt;</a></li>
+        <li><a href="laukums.html" target="_blank">laukums</a></li>
       </ul>
     </div>
   </div>
@@ -54,7 +55,7 @@
   <div class="row">
     <div class="col-sm-4">
       <p id="para1"> Šis teksts spīd</p>
-      <img src="images/bilde1.png" class="img-responsive margin" style="width:8 00%" alt="Image">
+      <img src="images/bilde1.png" class="img-responsive margin" style="width:800%" alt="Image">
       
     </div>
     <div class="col-sm-4"> 
@@ -81,6 +82,18 @@
   </div>
 </div>
 
+<script>
+window.onscroll = function() {myFunction(); };
+var navbar = document.getElementById("myNavbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
   <p>Rolands Mucenieks</p> 

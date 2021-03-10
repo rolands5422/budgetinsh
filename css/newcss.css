@@ -40,7 +40,7 @@
     color: #1abc9c !important;}
    #para1 {
   font-size: 40px;
-  color: #fff;
+  color: #0000FF;
   text-align: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -70,5 +70,11 @@
   font-size:31px;
 }  
 
- 
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 140px;
+}
